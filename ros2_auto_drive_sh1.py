@@ -89,7 +89,7 @@ class auto_driveSubscriber(Node):
         # self.model.load_state_dict(torch.load("/home/jing/ros2_ws/src/ros2_auto_drive_sh1/ros2_auto_drive_sh1/pkl/let20.pkl", weights_only=True))
 
         self.model = Network.LETNet().to(self.device)
-        self.model.load_state_dict(torch.load("/home/jing/ros2_ws/src/ros2_auto_drive_sh1/ros2_auto_drive_sh1/pkl/letnet.pkl", weights_only=False))
+        self.model.load_state_dict(torch.load("/home/jing/ros2_ws/src/ros2_auto_drive_sh1/ros2_auto_drive_sh1/pkl/R-SegLETNet.pkl", weights_only=False))
 
         # self.model = Network.RSegLETNet().to(self.device)
         # self.model.load_state_dict(torch.load("/home/jing/ros2_ws/src/ros2_auto_drive_sh1/ros2_auto_drive_sh1/pkl/R-SegLETNet20.pkl", weights_only=False))
